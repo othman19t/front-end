@@ -11,6 +11,4 @@ function filbar(second){
     const bar = document.getElementById("bar2");
     bar.style.transition = `${second}s linear width`;
     bar.style.width = "100%";
-    
-    
 }

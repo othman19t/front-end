@@ -50,5 +50,34 @@ body{
     align-items: center;
     padding-left: 1rem;
     
-    
 }
+
+
+/*btn fedin and out*/
+.btn{
+    cursor: pointer;
+    animation: animateBtn 1s ease forwards;
+}
+
+@keyframes animateBtn{
+    from{
+        opacity: 1;
+        pointer-events: all;
+    }
+    to{
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+}
+ 
+
+
+
+
+
+
+
+
+
+
