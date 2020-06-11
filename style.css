@@ -30,3 +30,25 @@ body{
     max-width: calc(100% - 0.7em);
     padding: 1em;
 }
+
+/* second way of greating aprogress bar*/
+.bar-container{
+    width: 500px;
+    height: 30px;
+    background: red;
+    border-radius: 3rem;
+    border: solid 2px red;
+    overflow: hidden;
+    
+}
+.bar{
+    width: 0%;
+    height: 26px;
+    background: darkgreen;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    
+    
+}
