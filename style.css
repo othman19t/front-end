@@ -1,0 +1,32 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* progress-par*/
+.progress-par{
+    margin-top: 5rem;
+    position: relative;
+    width: 500px;
+    height: 3em;
+    background: gray;
+    border-radius: 2.4em
+}
+.progress-par::before{
+    content: attr(data); /*get data from html using attr*/
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0.4em;
+    bottom: 0.4em;
+    left: 0.3em;
+    background: blue;
+    border-radius: 1.3em;
+    width:calc(var(--width, 0) * 1%); /* calc to calculate for us || var to pass varible in css and 0 if the var does not exist*/
+    min-width: 2rem;
+    max-width: calc(100% - 0.7em);
+    padding: 1em;
+}
