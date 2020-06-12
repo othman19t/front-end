@@ -12,3 +12,9 @@ function filbar(second){
     bar.style.transition = `${second}s linear width`;
     bar.style.width = "100%";
 }
+
+
+// to get the value and the unit of the style width/hieght... element
+const {value, unit} = prograssPar.computedStyleMap().get("width");
+console.log(value);
+console.log(unit);
